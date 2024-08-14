@@ -84,7 +84,7 @@ const Cart = () => {
                     <ModalBody className='bg-rose-50 rounded-md'>
                       {
                         cart.map((item) => (
-                          <div>
+                          <div key={item.id}>
                             <div className='flex flex-row justify-between'>
                             <div className='flex flex-row gap-3'>
                               <Image
