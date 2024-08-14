@@ -19,6 +19,7 @@ const page = () => {
         <div className='grid grid-cols-3 max-md:grid-cols-1 gap-10 mt-12 ' >
           {data.map((item) => (
             <DessertCard 
+              key={item.id}
               product = {item}
             />
           ))}

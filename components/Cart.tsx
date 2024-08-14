@@ -50,7 +50,7 @@ const Cart = () => {
           <div className={`${cart.length == 0 ? 'hidden':'block'}`}>
             <div className='flex flex-col gap-3'>
               {cart.map((item) => (
-                <CartItemd id={item.id} name={item.name} quantity={item.quantity} price={item.price}/>
+                <CartItemd key={item.id} id={item.id} name={item.name} quantity={item.quantity} price={item.price}/>
               ))}
             </div>
             <div className="flex flex-row justify-between align-bottom">
