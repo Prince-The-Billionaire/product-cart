@@ -8,6 +8,7 @@ import Cart from '@/components/Cart'
 import { Provider } from 'react-redux'
 import { store } from '@/state/store'
 
+
 const page = () => {
   return (
     <Provider store={store}>
